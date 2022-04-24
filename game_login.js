@@ -4,6 +4,13 @@ function addUser(){
 
     localStorage.setItem("player1_name", player1_name);
     localStorage.setItem("player2_name", player2_name);
-
-    window.location = "game_page.html";
+    
+    if(player1_name , player2_name == ""){
+        document.getElementById("Alert").innerHTML = "Please Enter Player Names";
+        document.getElementById("Alert").style.backgroundColor = "white";
+    }
+    else{
+        window.location = "game_page.html";
+    }
 }
+
