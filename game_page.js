@@ -12,3 +12,25 @@ document.getElementById("player2_score").innerHTML = player2_score;
 
 document.getElementById("player_question").innerHTML = "Question Turn = " + player1_name;
 document.getElementById("player_answer").innerHTML = "Answer Turn = " + player2_name;
+
+function send(){  
+    number1 = document.getElementById("number1").value;
+    number2 = document.getElementById("number2").value;
+    actual_answer = parseInt(number1) * parseInt(number2);
+    if(number1 , number2 == ""){
+        document.getElementById("Alert").innerHTML = "Please Enter The Numbers In The Input Boxes";
+        document.getElementById("Alert").style.backgroundColor = "white";
+        } 
+        else{
+    question_word = "<h4>" + number1 + "  X  " + number2 + "</h4>";
+    input_box = "<br>Answer : <input type='text' id= 'input_check_box'>";
+    check_button = "<br><br><button class ='btn btn-info' onclick ='check()'>Check</button>";
+    row = question_word + input_box + check_button ; 
+    document.getElementById("output").innerHTML = row;
+    document.getElementById("number1").value = "";
+    document.getElementById("number2").value = "";
+    document.getElementById("Alert").innerHTML = "";
+    document.getElementById("Alert").style.backgroundColor = "red";
+    }
+}
+
