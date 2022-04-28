@@ -13,21 +13,24 @@
 
         <h4 id="player1_name" class="design">Null : </h4> <span id="player1_score" class="design">0</span>
         <br>
-        <h4 id="player2_name" class="design">Null : </h4> <span id="player2_score" class="design">0</span>
+        <h4 id="player2_name" class="design">Null : </h4> <span id="player2_score" class="design">0</span><br>
+        <h1 style="text-align: center; color: white;">The Math Quiz Game!</h1>
         
         <div class="container">
             <center>
-                <h2 style="color: white;">The Math Quiz Game!</h2>
+                <h3 style="color: white;">Score 3 Points To Win The Game!</h3>
                 <h3 id="player_question">Question Turn - null</h3>
                 <h3 id="player_answer">Answer Turn - null</h3>
                 <div id="output" class="col-lg-6"> </div>
-                <h3 id="Alert" style="width: 500px; height: 25px;"></h3>
+                <h3 id="Alert" style="width: 550px; height: 25px;"></h3>
                 <h4>Number 1</h4>
                 <input type="number" id="number1" class="form-control" placeholder="Number 1">
                 <h4>Number 2</h4>
                 <input type="number" id="number2" class="form-control" placeholder="Number 2">
+                <br> 
+                <button id="send" onclick="send()" class="btn btn-success" style="width: 30%; margin-left: 50px;">Send</button><button id="replay" class="btn btn-danger" onclick="replay()" style="margin-left: 15px; background-color: red; color: red; border-color: red;">Replay</button>
                 <br>
-                <button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+                <h3 id="winner" style="width: 550px; height: 25px;"></h3>
             </center>
         </div>
         
